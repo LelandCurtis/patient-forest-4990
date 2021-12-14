@@ -7,3 +7,12 @@
   <p><%= actor.name %></p>
 <% end %>
 <p><%= "Average Actor Age: #{@actors.average_age}" %></p>
+
+<fieldset>
+  <legend>Add Actor</legend>
+  <%= form_with url: "/actor_movies", method: :create, local: true do |f| %>
+    <%= f.label :name, "Input Actor Name" %>
+    <%= f.text_field :name %>
+    <%= button.submit %>
+  <% end %>
+</fieldset>
