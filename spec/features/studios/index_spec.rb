@@ -5,10 +5,10 @@ RSpec.describe 'studios index page' do
     @studio_1 = Studio.create!(name: "Marvel", location: "Hollywood")
     @studio_2 = Studio.create!(name: "Universal", location: "Florida")
 
-    @movie_1 = Movie.create!(title: "title1", creation_year: 2008, genre: "Action", studio_id: @studio_1.id)
-    @movie_2 = Movie.create!(title: "title2", creation_year: 2018, genre: "Action", studio_id: @studio_1.id)
-    @movie_3 = Movie.create!(title: "title3", creation_year: 2014, genre: "Romance", studio_id: @studio_2.id)
-    @movie_4 = Movie.create!(title: "title4", creation_year: 2012, genre: "Action", studio_id: @studio_2.id)
+    @movie_1 = Movie.create!(title: "movie_1", creation_year: 2008, genre: "Action", studio_id: @studio_1.id)
+    @movie_2 = Movie.create!(title: "movie_2", creation_year: 2018, genre: "Action", studio_id: @studio_1.id)
+    @movie_3 = Movie.create!(title: "movie_3", creation_year: 2014, genre: "Romance", studio_id: @studio_2.id)
+    @movie_4 = Movie.create!(title: "movie_4", creation_year: 2012, genre: "Action", studio_id: @studio_2.id)
   end
 
   it "lists name and location of each studio, and then the title of all of it's movies" do
