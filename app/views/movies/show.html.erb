@@ -5,4 +5,5 @@
 <h3>Actors:</h3>
 <% @actors.each do |actor| %>
   <p><%= actor.name %></p>
+  <p><%= "Average Actor Age: #{@actors.average_age}" %></p>
 <% end %>
