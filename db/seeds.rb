@@ -1,7 +1,7 @@
-Studio.destroy_all
 ActorMovie.destroy_all
 Movie.destroy_all
 Actor.destroy_all
+Studio.destroy_all
 
 universal = Studio.create!(name: 'Universal Studios', location: 'Hollywood')
 
