@@ -53,7 +53,7 @@ RSpec.describe 'movies show page' do
     expect(page).to_not have_content(@actor_3.name)
     fill_in "Actor Name", with: "Pete Davidson"
     click_button "Submit"
-    expect(current_path).to eq(visit "/movies/#{@movie_1.id}")
+    expect(current_path).to eq("/movies/#{@movie_1.id}")
     expect(page).to have_content(@actor_3.name)
   end
 end
