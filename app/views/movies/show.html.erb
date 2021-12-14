@@ -13,6 +13,6 @@
   <%= form_with url: "/actor_movies?movie_id=#{@movie.id}", method: :post, local: true do |f| %>
     <%= f.label :name, "Input Actor Name" %>
     <%= f.text_field :name %>
-    <%= button.submit %>
+    <%= f.submit "Submit"%>
   <% end %>
 </fieldset>
