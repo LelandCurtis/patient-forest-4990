@@ -32,7 +32,8 @@ RSpec.describe 'movies show page' do
   end
 
   it 'each movie shows a list of its actors from youngest to oldest' do
-
+    visit "/movies/#{@movie_1.id}"
+    expect(@actor_1.name).to appear_before(@actor_2.name)
   end
 
   it 'shows the average age of the movies actors' do
