@@ -1,9 +1,14 @@
+Studio.destroy_all
+ActorMovie.destroy_all
+Movie.destroy_all
+Actor.destroy_all
+
 universal = Studio.create!(name: 'Universal Studios', location: 'Hollywood')
 
 movie_1 = universal.movies.create!(title: 'Raiders of the Lost Ark', creation_year: 1981, genre: 'Action/Adventure')
 movie_2 = universal.movies.create!(title: 'Shrek', creation_year: 2001, genre: 'Comedy')
 
-marvel = Studio.create!(name: 'Mervel Studios', location: 'Florida')
+marvel = Studio.create!(name: 'Marvel Studios', location: 'Florida')
 
 movie_3 = marvel.movies.create!(title: 'Iron Man', creation_year:2005, genre: 'Action/Adventure')
 movie_4 = marvel.movies.create!(title: 'Thor', creation_year: 2015, genre: 'Comedy')
